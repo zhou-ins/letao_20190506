@@ -1,8 +1,12 @@
-/*³õÊ¼»¯ÇøÓò¹ö¶¯×é¼ş*/
-mui('.mui-scroll-wrapper').scroll({
-    indicators:false
-});
-/*ÂÖ²¥Í¼µÄ³õÊ¼»¯*/
-mui('.mui-slider').slider({
-    interval:4000
+$(function(){
+    mui('.mui-scroll-wrapper').scroll({
+        indicators: true, //æ˜¯å¦æ˜¾ç¤ºæ»šåŠ¨æ¡
+    });
+    mui('.mui-slider').slider({
+        interval:2000
+    });
+
+
+
+
 });

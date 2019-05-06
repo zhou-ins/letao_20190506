@@ -5,8 +5,8 @@ const mysql = require('mysql');
 const pool  = mysql.createPool({
     host : '127.0.0.1',
     user : 'root',
-    password : '',
-    database : 'letao'
+    password : '123456',
+    database : 'letao'  /*这里要使用驼峰命名法才可以，那需要修改数据库的名字嘛？*/
 });
 
 /**
