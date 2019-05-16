@@ -24,10 +24,14 @@ app.use(session({
 
 app.use(function (req, res, next) {
     var url = req.originalUrl;
-    if (!req.session.employee
+    /*if (!req.session.employee
         && ((url.indexOf('/admin') > -1 && url.indexOf('.html') > -1) || url == '/admin/' )
         && url.indexOf('/admin/login.html') == -1) {
         return res.redirect('/admin/login.html');
+    }else*/if (!req.session.employee
+        && ((url.indexOf('/zz/admin666') > -1 && url.indexOf('.html') > -1) || url == '/zz/admin666/' )
+        && url.indexOf('/zz/admin666/login.html') == -1) {
+        return res.redirect('/zz/admin666/login.html');
     }
     next();
 });
